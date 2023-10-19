@@ -1634,6 +1634,10 @@ footer #search button:hover {
   margin-bottom: 30px;
 }
 
+.main-nav .logo img {
+  max-width: 350px;
+  /* margin-bottom: 30px; */
+}
 .footer-widget h4 {
   font-size: 20px;
   color: #fff;
