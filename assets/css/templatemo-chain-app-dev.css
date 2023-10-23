@@ -1635,8 +1635,8 @@ footer #search button:hover {
 }
 
 .main-nav .logo img {
-  max-width: 350px;
-  /* margin-bottom: 30px; */
+  max-width: 120px;
+  margin-bottom: 30px;
 }
 .footer-widget h4 {
   font-size: 20px;
@@ -2223,3 +2223,6 @@ responsive
     padding: 30px;
   }
 }
+
+
+

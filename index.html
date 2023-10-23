@@ -87,8 +87,8 @@
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <img class="w-25" src="assets/images/white-logo2.png" alt="Chain App Dev">
+            <a href="index.html" class="logo   ">
+              <img class=" " src="assets/images/white-logo2.png" alt="Chain App Dev">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
@@ -344,7 +344,20 @@
     </a>
   </div>
 
-
+<div class="container mt-4">
+  <div class="form-container  rounded-2 shadow-lg  bg-light p-4">
+     <form  class="form " name="google-sheet">
+        <h2 class="text-center"><strong>Contact </strong> Us</h2>
+        <div class="form-group m-2"><input class="form-control" type="text" name="name" placeholder="Name**" required=""></div>
+        <div class="form-group m-2"><input class="form-control" type="email" name="email" placeholder="Email" required=""></div>
+      
+        <div class="form-group m-2"><input class="form-control" type="number" name="phone" placeholder="Phone***" required=""></div>
+        <div class="form-group m-2"><input class="form-control" type="text" name="message" placeholder="Message " required=""></div>
+        <div class="form-group m-2"><button class="btn btn-primary btn-block" type="submit">Send</button></div>
+      </form>
+</div>
+</div>
+</div>
 
   
   <footer id="newsletter">
@@ -390,6 +403,18 @@
       </div>
     </div>
   </footer>
+
+  <script> 
+    const scriptURL="https://script.google.com/macros/s/AKfycbygpBsYq1lAFfcgc5qYl09x_e8wAVhiZ0mg2LPGz9IgGuxkt095m2HKpNJsXCHrA9sg3A/exec"
+    const form = document.forms['google-sheet']
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>window.location.href="index.html")
+        .catch(error => console.error('Error!', error.message))
+    })
+         </script>
 
 
   <!-- Scripts -->
